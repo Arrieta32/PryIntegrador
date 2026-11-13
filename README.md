@@ -26,6 +26,8 @@ O abrir directamente `presentacion-jurado/index.html` / `docs/index.html` en el 
 
 ### Jurados
 
-1. Fernando Coronel  
-2. Regina Carmona  
-3. María de Los Ángeles Medina  
+1. Regina Carmona  
+2. María de Los Ángeles Medina  
+3. Rebeca Agüero  
+4. Fernando Coronel  
+
