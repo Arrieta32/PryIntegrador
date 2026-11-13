@@ -41,41 +41,77 @@
       <p class="lede">Tribunal de evaluación · Defensa de hoy</p>
     </header>
 
-    <section class="profiles" aria-label="Miembros del jurado">
-      <article class="profile profile--filled">
-        <div class="profile__accent" aria-hidden="true"></div>
-        <p class="profile__role">Jurado 1</p>
-        <h2 class="profile__name">Fernando Coronel</h2>
-        <ul class="profile__bio">
-          <li>Licenciado en Sistemas Informáticos — Universidad Autónoma de Asunción</li>
-          <li>17 años de trayectoria en procesos transaccionales</li>
-          <li>12 años en Bancard (4 años como QA)</li>
-          <li>5 años en ITTI a cargo de pruebas de hardware, software e integraciones con otras entidades de las terminales de experiencia digital (TEDs)</li>
-        </ul>
-      </article>
+    <section
+      class="carousel"
+      aria-roledescription="carrusel"
+      aria-label="Miembros del jurado"
+      data-carousel
+    >
+      <div class="carousel__shell">
+        <button
+          type="button"
+          class="carousel__nav carousel__nav--prev"
+          data-carousel-prev
+          aria-label="Jurado anterior"
+        >
+          <span aria-hidden="true">‹</span>
+        </button>
 
-      <article class="profile profile--filled">
-        <div class="profile__accent" aria-hidden="true"></div>
-        <p class="profile__role">Jurado 2</p>
-        <h2 class="profile__name">Regina Carmona</h2>
-        <ul class="profile__bio">
-          <li>Contadora Pública y Master en Administración de Empresas — Universidad Nacional de Asunción</li>
-          <li>Más de 15 años de experiencia en auditoría, finanzas y contabilidad</li>
-          <li>Actualmente Contralora en Equifax (multinacional de tecnología y datos financieros)</li>
-        </ul>
-      </article>
+        <div class="carousel__viewport">
+          <div class="carousel__track" data-carousel-track>
+            <article class="carousel__slide profile is-active" data-carousel-slide aria-hidden="false">
+              <div class="profile__accent" aria-hidden="true"></div>
+              <p class="profile__role">Jurado 1</p>
+              <h2 class="profile__name">Fernando Coronel</h2>
+              <ul class="profile__bio">
+                <li>Licenciado en Sistemas Informáticos — Universidad Autónoma de Asunción</li>
+                <li>17 años de trayectoria en procesos transaccionales</li>
+                <li>12 años en Bancard (4 años como QA)</li>
+                <li>5 años en ITTI a cargo de pruebas de hardware, software e integraciones con otras entidades de las terminales de experiencia digital (TEDs)</li>
+              </ul>
+            </article>
 
-      <article class="profile profile--filled">
-        <div class="profile__accent" aria-hidden="true"></div>
-        <p class="profile__role">Jurado 3</p>
-        <h2 class="profile__name">María de Los Ángeles Medina</h2>
-        <ul class="profile__bio">
-          <li>Ingeniera Industrial — Universidad Nacional de Asunción</li>
-          <li>Más de 15 años de experiencia en planificación y producción industrial</li>
-          <li>Actualmente Gerente de Planificación en Tecnimet (provisión y montaje industriales de refrigeración y equipos electromecánicos)</li>
-        </ul>
-      </article>
+            <article class="carousel__slide profile" data-carousel-slide aria-hidden="true">
+              <div class="profile__accent" aria-hidden="true"></div>
+              <p class="profile__role">Jurado 2</p>
+              <h2 class="profile__name">Regina Carmona</h2>
+              <ul class="profile__bio">
+                <li>Contadora Pública y Master en Administración de Empresas — Universidad Nacional de Asunción</li>
+                <li>Más de 15 años de experiencia en auditoría, finanzas y contabilidad</li>
+                <li>Actualmente Contralora en Equifax (multinacional de tecnología y datos financieros)</li>
+              </ul>
+            </article>
+
+            <article class="carousel__slide profile" data-carousel-slide aria-hidden="true">
+              <div class="profile__accent" aria-hidden="true"></div>
+              <p class="profile__role">Jurado 3</p>
+              <h2 class="profile__name">María de Los Ángeles Medina</h2>
+              <ul class="profile__bio">
+                <li>Ingeniera Industrial — Universidad Nacional de Asunción</li>
+                <li>Más de 15 años de experiencia en planificación y producción industrial</li>
+                <li>Actualmente Gerente de Planificación en Tecnimet (provisión y montaje industriales de refrigeración y equipos electromecánicos)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="carousel__nav carousel__nav--next"
+          data-carousel-next
+          aria-label="Jurado siguiente"
+        >
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
+
+      <div class="carousel__footer">
+        <p class="carousel__status" data-carousel-status aria-live="polite">1 / 3</p>
+        <div class="carousel__dots" data-carousel-dots role="tablist" aria-label="Seleccionar jurado"></div>
+      </div>
     </section>
   </main>
+
+  <script src="carousel.js" defer></script>
 </body>
 </html>
