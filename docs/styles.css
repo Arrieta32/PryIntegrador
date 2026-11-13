@@ -78,11 +78,19 @@ body {
   animation: rise 0.8s ease-out both;
 }
 
+.brand-logo {
+  display: block;
+  width: clamp(5.5rem, 12vw, 8.5rem);
+  height: auto;
+  margin: 0 auto 0.85rem;
+  object-fit: contain;
+}
+
 .brand-mark {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.4rem, 6.5vw, 4.6rem);
+  font-size: clamp(2.1rem, 5.5vw, 3.8rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--blue);
@@ -97,11 +105,42 @@ body {
   color: var(--orange);
 }
 
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.75rem) clamp(1.25rem, 3.5vw, 2.75rem);
+  margin: clamp(0.9rem, 2vh, 1.35rem) auto 0;
+  max-width: 52rem;
+}
+
+.meta__item {
+  margin: 0;
+  text-align: center;
+  min-width: 9rem;
+}
+
+.meta dt {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.meta dd {
+  margin: 0.2rem 0 0;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .title {
   margin: clamp(1rem, 2.5vh, 1.6rem) 0 0;
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-size: clamp(1.85rem, 4vw, 2.85rem);
   line-height: 1.1;
   color: var(--ink);
 }
