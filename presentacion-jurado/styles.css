@@ -13,7 +13,7 @@
   --paper: #f6f8fc;
   --paper-bright: #ffffff;
   --line: rgba(3, 78, 162, 0.14);
-  --font-display: "Fraunces", "Georgia", serif;
+  --font-display: "Source Serif 4", "Georgia", serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
   --ease-carousel: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -140,9 +140,11 @@ body {
 .title {
   margin: clamp(0.85rem, 2vh, 1.25rem) 0 0;
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 700;
   font-size: clamp(1.7rem, 3.6vw, 2.5rem);
   line-height: 1.1;
+  letter-spacing: 0.01em;
+  font-optical-sizing: auto;
   color: var(--ink);
 }
 
